@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="ki7-YH-5IP" kind="push" id="rYG-Qz-d4R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133" y="156"/>
+        </scene>
+        <!--Main Screen View Controller-->
+        <scene sceneID="dJM-nr-eHi">
+            <objects>
+                <viewController storyboardIdentifier="MainScreenViewController" id="ki7-YH-5IP" customClass="MainScreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lGA-Ni-YtQ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAN-xr-Tud">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Select Image">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="ki7-YH-5IP" eventType="touchUpInside" id="raN-vH-D23"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZZ-TX-mZ8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="9iG-ew-ktX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Apply FFT">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="applyFFTAction:" destination="ki7-YH-5IP" eventType="touchUpInside" id="OYq-Et-hZc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOz-kP-IcY">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="6lf-q8-lNt"/>
+                                    <constraint firstAttribute="height" constant="256" id="X3f-wn-tpm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nOz-kP-IcY" firstAttribute="leading" secondItem="lGA-Ni-YtQ" secondAttribute="leading" constant="37" id="7pY-lv-7u2"/>
+                            <constraint firstAttribute="trailing" secondItem="XZZ-TX-mZ8" secondAttribute="trailing" constant="24" id="FTV-Ku-znD"/>
+                            <constraint firstAttribute="bottom" secondItem="bAN-xr-Tud" secondAttribute="bottom" constant="39" id="Xbo-s8-0fJ"/>
+                            <constraint firstItem="nOz-kP-IcY" firstAttribute="top" secondItem="lGA-Ni-YtQ" secondAttribute="top" constant="44" id="rBT-Js-Rcz"/>
+                            <constraint firstItem="XZZ-TX-mZ8" firstAttribute="baseline" secondItem="bAN-xr-Tud" secondAttribute="baseline" type="default" id="rvH-ef-LHN"/>
+                            <constraint firstItem="bAN-xr-Tud" firstAttribute="leading" secondItem="lGA-Ni-YtQ" secondAttribute="leading" constant="25" id="tDC-nd-osf"/>
+                            <constraint firstItem="nOz-kP-IcY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lGA-Ni-YtQ" secondAttribute="top" constant="44" type="user" id="vQp-V8-zue"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BVt-t0-3QW"/>
+                    <connections>
+                        <outlet property="originalImageView" destination="nOz-kP-IcY" id="xkX-dn-5cN"/>
+                        <segue destination="8cW-v9-Aat" kind="push" id="qEI-6n-ngl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhx-jW-Sah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="143"/>
+        </scene>
+        <!--Amplitude View Controller-->
+        <scene sceneID="O12-Bh-Ns1">
+            <objects>
+                <viewController storyboardIdentifier="AmplitudeViewController" id="8cW-v9-Aat" customClass="AmplitudeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xBz-de-OVr">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQ2-D7-iSB">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="faI-44-9UQ"/>
+                                    <constraint firstAttribute="width" constant="256" id="v9G-2Z-6ul"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Amplitude FFT image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmP-jp-bfd">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nQ2-D7-iSB" firstAttribute="top" secondItem="xBz-de-OVr" secondAttribute="top" constant="71" id="2B8-lV-3HF"/>
+                            <constraint firstItem="NmP-jp-bfd" firstAttribute="leading" secondItem="xBz-de-OVr" secondAttribute="leading" constant="67" id="SJm-c5-HBF"/>
+                            <constraint firstItem="nQ2-D7-iSB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xBz-de-OVr" secondAttribute="top" constant="71" type="user" id="aTj-VD-78M"/>
+                            <constraint firstItem="NmP-jp-bfd" firstAttribute="top" secondItem="xBz-de-OVr" secondAttribute="top" constant="20" symbolic="YES" type="default" id="cDY-av-ppJ"/>
+                            <constraint firstItem="nQ2-D7-iSB" firstAttribute="centerX" secondItem="xBz-de-OVr" secondAttribute="centerX" type="default" id="di4-g5-qc7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eD7-im-oxq"/>
+                    <connections>
+                        <outlet property="amplitudeImageView" destination="nQ2-D7-iSB" id="faq-le-okf"/>
+                        <segue destination="je6-If-gVc" kind="push" id="2ED-eL-sde"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPm-e2-cKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805" y="138"/>
+        </scene>
+        <!--Phase View Controller-->
+        <scene sceneID="1rN-tg-vwr">
+            <objects>
+                <viewController storyboardIdentifier="PhaseViewController" id="je6-If-gVc" customClass="PhaseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m8x-un-6aA">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUO-6o-icv">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="h6k-gC-UUP"/>
+                                    <constraint firstAttribute="height" constant="256" id="uUl-9K-f95"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Phase FFT image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNq-8i-7Tv">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JNq-8i-7Tv" firstAttribute="centerX" secondItem="XUO-6o-icv" secondAttribute="centerX" type="default" id="PAY-dt-Xe6"/>
+                            <constraint firstItem="XUO-6o-icv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="m8x-un-6aA" secondAttribute="top" constant="71" type="user" id="T7Z-fO-ux1"/>
+                            <constraint firstItem="XUO-6o-icv" firstAttribute="centerX" secondItem="m8x-un-6aA" secondAttribute="centerX" type="default" id="Y7h-fD-Pow"/>
+                            <constraint firstItem="XUO-6o-icv" firstAttribute="top" secondItem="m8x-un-6aA" secondAttribute="top" constant="71" id="jFI-l0-HV4"/>
+                            <constraint firstItem="JNq-8i-7Tv" firstAttribute="top" secondItem="m8x-un-6aA" secondAttribute="top" constant="20" symbolic="YES" type="default" id="nxB-WT-0tC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VVl-UO-y8T"/>
+                    <connections>
+                        <outlet property="phaseImageView" destination="XUO-6o-icv" id="vHw-T2-dc0"/>
+                        <segue destination="B6a-L9-cId" kind="push" id="yTw-2V-laO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6w-yX-SBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1235" y="138"/>
+        </scene>
+        <!--Image After InvFFT View Controller-->
+        <scene sceneID="8t2-KI-xEx">
+            <objects>
+                <viewController storyboardIdentifier="ImageAfterInvFFTViewController" id="BFj-Va-fa7" customClass="ImageAfterInvFFTViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IaI-fZ-hh7">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AA9-8s-bXv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="Fbx-sP-ZJJ"/>
+                                    <constraint firstAttribute="width" constant="256" id="nVx-r0-v5K"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Original image after applying Inv FFT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn4-0S-gOg">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rn4-0S-gOg" firstAttribute="leading" secondItem="IaI-fZ-hh7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3kn-Fy-DKF"/>
+                            <constraint firstItem="rn4-0S-gOg" firstAttribute="top" secondItem="IaI-fZ-hh7" secondAttribute="top" constant="20" symbolic="YES" type="default" id="LhE-2t-QXZ"/>
+                            <constraint firstItem="AA9-8s-bXv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IaI-fZ-hh7" secondAttribute="top" constant="71" type="user" id="T2u-2o-vMu"/>
+                            <constraint firstItem="AA9-8s-bXv" firstAttribute="top" secondItem="IaI-fZ-hh7" secondAttribute="top" constant="77" id="sVv-6T-U6R"/>
+                            <constraint firstItem="AA9-8s-bXv" firstAttribute="leading" secondItem="IaI-fZ-hh7" secondAttribute="leading" constant="37" id="tch-XC-vyb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZQw-1i-qaj"/>
+                    <connections>
+                        <outlet property="originalImageAfterInvFFT" destination="AA9-8s-bXv" id="bB8-JX-Zap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oi9-Ib-Tm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2227" y="133"/>
+        </scene>
+        <!--Fourier Log View Controller-->
+        <scene sceneID="8x5-cv-Qcn">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkk-qn-HXL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="FourierLogViewController" id="B6a-L9-cId" customClass="FourierLogViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="taz-l6-VAr">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEb-3z-HE1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="Ty4-Ht-UHL"/>
+                                    <constraint firstAttribute="width" constant="256" id="oh7-hK-GsF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="FFT fourier log image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yc-f0-UTP">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rEb-3z-HE1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="taz-l6-VAr" secondAttribute="top" constant="71" type="user" id="3mw-17-LDE"/>
+                            <constraint firstItem="rEb-3z-HE1" firstAttribute="centerX" secondItem="taz-l6-VAr" secondAttribute="centerX" type="default" id="6GS-uQ-Bb1"/>
+                            <constraint firstItem="rEb-3z-HE1" firstAttribute="top" secondItem="taz-l6-VAr" secondAttribute="top" constant="74" id="bLP-Ea-F18"/>
+                            <constraint firstItem="0yc-f0-UTP" firstAttribute="leading" secondItem="taz-l6-VAr" secondAttribute="leading" constant="67" id="drF-U1-sWN"/>
+                            <constraint firstItem="0yc-f0-UTP" firstAttribute="top" secondItem="taz-l6-VAr" secondAttribute="top" constant="20" symbolic="YES" type="default" id="fie-6h-TxD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jc9-Cc-n77"/>
+                    <connections>
+                        <outlet property="fourierLogImageView" destination="rEb-3z-HE1" id="6ct-fd-BRH"/>
+                        <segue destination="BFj-Va-fa7" kind="push" id="vUz-ED-3Cw"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1699" y="138"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="AmplitudeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AmplitudeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="amplitudeImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="FourierLogViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FourierLogViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="fourierLogImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ImageAfterInvFFTViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageAfterInvFFTViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="originalImageAfterInvFFT" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="MainScreenViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainScreenViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="applyFFTAction:"/>
+                <relationship kind="action" name="selectPhoto:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="originalImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PhaseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PhaseViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="phaseImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

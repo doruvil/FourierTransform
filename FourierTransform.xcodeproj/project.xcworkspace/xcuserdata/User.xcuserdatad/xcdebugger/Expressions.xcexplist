@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[MainScreenViewController FFTShiftUsing:]:MainScreenViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imgHeight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MainScreenViewController createImageFromPixels:]:MainScreenViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "imgHeight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEBD8666184D35EA000B33BD /* question_mark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEBD8665184D35EA000B33BD /* question_mark.jpg */; };
+		CEC3D9611858B1D90091E21B /* GKCropBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC3D94D1858B1D90091E21B /* GKCropBorderView.m */; };
+		CEC3D9621858B1D90091E21B /* GKImageCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC3D94F1858B1D90091E21B /* GKImageCropOverlayView.m */; };
+		CEC3D9631858B1D90091E21B /* GKImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC3D9511858B1D90091E21B /* GKImageCropView.m */; };
+		CEC3D9641858B1D90091E21B /* GKImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC3D9531858B1D90091E21B /* GKImageCropViewController.m */; };
+		CEC3D9651858B1D90091E21B /* GKImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC3D9551858B1D90091E21B /* GKImagePicker.m */; };
+		CEC3D9661858B1D90091E21B /* GKResizeableCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC3D9571858B1D90091E21B /* GKResizeableCropOverlayView.m */; };
+		CEC3D9671858B1D90091E21B /* PLCameraSheetButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC3D9591858B1D90091E21B /* PLCameraSheetButton.png */; };
+		CEC3D9681858B1D90091E21B /* PLCameraSheetButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC3D95A1858B1D90091E21B /* PLCameraSheetButton@2x.png */; };
+		CEC3D9691858B1D90091E21B /* PLCameraSheetButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC3D95B1858B1D90091E21B /* PLCameraSheetButtonPressed.png */; };
+		CEC3D96A1858B1D90091E21B /* PLCameraSheetButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC3D95C1858B1D90091E21B /* PLCameraSheetButtonPressed@2x.png */; };
+		CEC3D96B1858B1D90091E21B /* PLCameraSheetDoneButton.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC3D95D1858B1D90091E21B /* PLCameraSheetDoneButton.png */; };
+		CEC3D96C1858B1D90091E21B /* PLCameraSheetDoneButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC3D95E1858B1D90091E21B /* PLCameraSheetDoneButton@2x.png */; };
+		CEC3D96D1858B1D90091E21B /* PLCameraSheetDoneButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC3D95F1858B1D90091E21B /* PLCameraSheetDoneButtonPressed.png */; };
+		CEC3D96E1858B1D90091E21B /* PLCameraSheetDoneButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC3D9601858B1D90091E21B /* PLCameraSheetDoneButtonPressed@2x.png */; };
+		CECC3337184626E9008651C0 /* APPChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC3336184626E9008651C0 /* APPChildViewController.m */; };
+		CECC333A18462EA7008651C0 /* MainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC333918462EA7008651C0 /* MainScreenViewController.m */; };
+		CECC333F18463479008651C0 /* AmplitudeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC333E18463479008651C0 /* AmplitudeViewController.m */; };
+		CECC3343184639E1008651C0 /* PhaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC3342184639E1008651C0 /* PhaseViewController.m */; };
+		CECC334718463AFA008651C0 /* ImageAfterInvFFTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC334618463AFA008651C0 /* ImageAfterInvFFTViewController.m */; };
+		CECC334B18463E29008651C0 /* UIImage+Pixels.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC334A18463E29008651C0 /* UIImage+Pixels.m */; };
+		CEE7415418452E75006E4BCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE7415318452E75006E4BCA /* UIKit.framework */; };
+		CEE7415618452E75006E4BCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE7415518452E75006E4BCA /* Foundation.framework */; };
+		CEE7415818452E75006E4BCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE7415718452E75006E4BCA /* CoreGraphics.framework */; };
+		CEE7415E18452E75006E4BCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEE7415C18452E75006E4BCA /* InfoPlist.strings */; };
+		CEE7416018452E75006E4BCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7415F18452E75006E4BCA /* main.m */; };
+		CEE7416418452E76006E4BCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7416318452E76006E4BCA /* AppDelegate.m */; };
+		CEE7416618452E76006E4BCA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE7416518452E76006E4BCA /* Default.png */; };
+		CEE7416818452E76006E4BCA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE7416718452E76006E4BCA /* Default@2x.png */; };
+		CEE7416A18452E76006E4BCA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE7416918452E76006E4BCA /* Default-568h@2x.png */; };
+		CEE7416D18452E76006E4BCA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE7416B18452E76006E4BCA /* MainStoryboard_iPhone.storyboard */; };
+		CEE7417018452E76006E4BCA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE7416E18452E76006E4BCA /* MainStoryboard_iPad.storyboard */; };
+		CEE7417318452E76006E4BCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7417218452E76006E4BCA /* ViewController.m */; };
+		CEF10D09184D011E0041BE14 /* FourierLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF10D08184D011E0041BE14 /* FourierLogViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEBD8665184D35EA000B33BD /* question_mark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = question_mark.jpg; sourceTree = "<group>"; };
+		CEC3D94C1858B1D90091E21B /* GKCropBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCropBorderView.h; sourceTree = "<group>"; };
+		CEC3D94D1858B1D90091E21B /* GKCropBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKCropBorderView.m; sourceTree = "<group>"; };
+		CEC3D94E1858B1D90091E21B /* GKImageCropOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropOverlayView.h; sourceTree = "<group>"; };
+		CEC3D94F1858B1D90091E21B /* GKImageCropOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropOverlayView.m; sourceTree = "<group>"; };
+		CEC3D9501858B1D90091E21B /* GKImageCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropView.h; sourceTree = "<group>"; };
+		CEC3D9511858B1D90091E21B /* GKImageCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropView.m; sourceTree = "<group>"; };
+		CEC3D9521858B1D90091E21B /* GKImageCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropViewController.h; sourceTree = "<group>"; };
+		CEC3D9531858B1D90091E21B /* GKImageCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropViewController.m; sourceTree = "<group>"; };
+		CEC3D9541858B1D90091E21B /* GKImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImagePicker.h; sourceTree = "<group>"; };
+		CEC3D9551858B1D90091E21B /* GKImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImagePicker.m; sourceTree = "<group>"; };
+		CEC3D9561858B1D90091E21B /* GKResizeableCropOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKResizeableCropOverlayView.h; sourceTree = "<group>"; };
+		CEC3D9571858B1D90091E21B /* GKResizeableCropOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKResizeableCropOverlayView.m; sourceTree = "<group>"; };
+		CEC3D9591858B1D90091E21B /* PLCameraSheetButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLCameraSheetButton.png; sourceTree = "<group>"; };
+		CEC3D95A1858B1D90091E21B /* PLCameraSheetButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLCameraSheetButton@2x.png"; sourceTree = "<group>"; };
+		CEC3D95B1858B1D90091E21B /* PLCameraSheetButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLCameraSheetButtonPressed.png; sourceTree = "<group>"; };
+		CEC3D95C1858B1D90091E21B /* PLCameraSheetButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLCameraSheetButtonPressed@2x.png"; sourceTree = "<group>"; };
+		CEC3D95D1858B1D90091E21B /* PLCameraSheetDoneButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLCameraSheetDoneButton.png; sourceTree = "<group>"; };
+		CEC3D95E1858B1D90091E21B /* PLCameraSheetDoneButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLCameraSheetDoneButton@2x.png"; sourceTree = "<group>"; };
+		CEC3D95F1858B1D90091E21B /* PLCameraSheetDoneButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLCameraSheetDoneButtonPressed.png; sourceTree = "<group>"; };
+		CEC3D9601858B1D90091E21B /* PLCameraSheetDoneButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLCameraSheetDoneButtonPressed@2x.png"; sourceTree = "<group>"; };
+		CECC3335184626E9008651C0 /* APPChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPChildViewController.h; sourceTree = "<group>"; };
+		CECC3336184626E9008651C0 /* APPChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPChildViewController.m; sourceTree = "<group>"; };
+		CECC333818462EA7008651C0 /* MainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScreenViewController.h; path = ../MainScreenViewController.h; sourceTree = "<group>"; };
+		CECC333918462EA7008651C0 /* MainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScreenViewController.m; path = ../MainScreenViewController.m; sourceTree = "<group>"; };
+		CECC333D18463479008651C0 /* AmplitudeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmplitudeViewController.h; sourceTree = "<group>"; };
+		CECC333E18463479008651C0 /* AmplitudeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplitudeViewController.m; sourceTree = "<group>"; };
+		CECC3341184639E1008651C0 /* PhaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhaseViewController.h; sourceTree = "<group>"; };
+		CECC3342184639E1008651C0 /* PhaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhaseViewController.m; sourceTree = "<group>"; };
+		CECC334518463AFA008651C0 /* ImageAfterInvFFTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAfterInvFFTViewController.h; sourceTree = "<group>"; };
+		CECC334618463AFA008651C0 /* ImageAfterInvFFTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAfterInvFFTViewController.m; sourceTree = "<group>"; };
+		CECC334918463E29008651C0 /* UIImage+Pixels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Pixels.h"; sourceTree = "<group>"; };
+		CECC334A18463E29008651C0 /* UIImage+Pixels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Pixels.m"; sourceTree = "<group>"; };
+		CEE7415018452E75006E4BCA /* FourierTransform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourierTransform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE7415318452E75006E4BCA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEE7415518452E75006E4BCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEE7415718452E75006E4BCA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEE7415B18452E75006E4BCA /* FourierTransform-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FourierTransform-Info.plist"; sourceTree = "<group>"; };
+		CEE7415D18452E75006E4BCA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEE7415F18452E75006E4BCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEE7416118452E75006E4BCA /* FourierTransform-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FourierTransform-Prefix.pch"; sourceTree = "<group>"; };
+		CEE7416218452E76006E4BCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEE7416318452E76006E4BCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEE7416518452E76006E4BCA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CEE7416718452E76006E4BCA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CEE7416918452E76006E4BCA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CEE7416C18452E76006E4BCA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CEE7416F18452E76006E4BCA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CEE7417118452E76006E4BCA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEE7417218452E76006E4BCA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEF10D07184D011E0041BE14 /* FourierLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourierLogViewController.h; sourceTree = "<group>"; };
+		CEF10D08184D011E0041BE14 /* FourierLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourierLogViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEE7414D18452E75006E4BCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE7415418452E75006E4BCA /* UIKit.framework in Frameworks */,
+				CEE7415618452E75006E4BCA /* Foundation.framework in Frameworks */,
+				CEE7415818452E75006E4BCA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEC3D94A1858B1990091E21B /* GKImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				CEC3D94B1858B1D90091E21B /* GKClasses */,
+				CEC3D9581858B1D90091E21B /* GKImages */,
+			);
+			name = GKImagePicker;
+			sourceTree = "<group>";
+		};
+		CEC3D94B1858B1D90091E21B /* GKClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CEC3D94C1858B1D90091E21B /* GKCropBorderView.h */,
+				CEC3D94D1858B1D90091E21B /* GKCropBorderView.m */,
+				CEC3D94E1858B1D90091E21B /* GKImageCropOverlayView.h */,
+				CEC3D94F1858B1D90091E21B /* GKImageCropOverlayView.m */,
+				CEC3D9501858B1D90091E21B /* GKImageCropView.h */,
+				CEC3D9511858B1D90091E21B /* GKImageCropView.m */,
+				CEC3D9521858B1D90091E21B /* GKImageCropViewController.h */,
+				CEC3D9531858B1D90091E21B /* GKImageCropViewController.m */,
+				CEC3D9541858B1D90091E21B /* GKImagePicker.h */,
+				CEC3D9551858B1D90091E21B /* GKImagePicker.m */,
+				CEC3D9561858B1D90091E21B /* GKResizeableCropOverlayView.h */,
+				CEC3D9571858B1D90091E21B /* GKResizeableCropOverlayView.m */,
+			);
+			path = GKClasses;
+			sourceTree = "<group>";
+		};
+		CEC3D9581858B1D90091E21B /* GKImages */ = {
+			isa = PBXGroup;
+			children = (
+				CEC3D9591858B1D90091E21B /* PLCameraSheetButton.png */,
+				CEC3D95A1858B1D90091E21B /* PLCameraSheetButton@2x.png */,
+				CEC3D95B1858B1D90091E21B /* PLCameraSheetButtonPressed.png */,
+				CEC3D95C1858B1D90091E21B /* PLCameraSheetButtonPressed@2x.png */,
+				CEC3D95D1858B1D90091E21B /* PLCameraSheetDoneButton.png */,
+				CEC3D95E1858B1D90091E21B /* PLCameraSheetDoneButton@2x.png */,
+				CEC3D95F1858B1D90091E21B /* PLCameraSheetDoneButtonPressed.png */,
+				CEC3D9601858B1D90091E21B /* PLCameraSheetDoneButtonPressed@2x.png */,
+			);
+			path = GKImages;
+			sourceTree = "<group>";
+		};
+		CECC333B18463423008651C0 /* MainScreenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CECC333818462EA7008651C0 /* MainScreenViewController.h */,
+				CECC333918462EA7008651C0 /* MainScreenViewController.m */,
+			);
+			name = MainScreenViewController;
+			sourceTree = "<group>";
+		};
+		CECC333C1846345B008651C0 /* AmplitudeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CECC333D18463479008651C0 /* AmplitudeViewController.h */,
+				CECC333E18463479008651C0 /* AmplitudeViewController.m */,
+			);
+			name = AmplitudeViewController;
+			sourceTree = "<group>";
+		};
+		CECC3340184639CE008651C0 /* PhaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CECC3341184639E1008651C0 /* PhaseViewController.h */,
+				CECC3342184639E1008651C0 /* PhaseViewController.m */,
+			);
+			name = PhaseViewController;
+			sourceTree = "<group>";
+		};
+		CECC334418463AE4008651C0 /* ImageAfterInvFFT */ = {
+			isa = PBXGroup;
+			children = (
+				CECC334518463AFA008651C0 /* ImageAfterInvFFTViewController.h */,
+				CECC334618463AFA008651C0 /* ImageAfterInvFFTViewController.m */,
+			);
+			name = ImageAfterInvFFT;
+			sourceTree = "<group>";
+		};
+		CECC334818463E10008651C0 /* UIImage+Pixels */ = {
+			isa = PBXGroup;
+			children = (
+				CECC334918463E29008651C0 /* UIImage+Pixels.h */,
+				CECC334A18463E29008651C0 /* UIImage+Pixels.m */,
+			);
+			name = "UIImage+Pixels";
+			path = FourierTransform;
+			sourceTree = "<group>";
+		};
+		CEE7414718452E75006E4BCA = {
+			isa = PBXGroup;
+			children = (
+				CEC3D94A1858B1990091E21B /* GKImagePicker */,
+				CEBD8665184D35EA000B33BD /* question_mark.jpg */,
+				CECC334818463E10008651C0 /* UIImage+Pixels */,
+				CEE7415918452E75006E4BCA /* FourierTransform */,
+				CEE7415218452E75006E4BCA /* Frameworks */,
+				CEE7415118452E75006E4BCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEE7415118452E75006E4BCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEE7415018452E75006E4BCA /* FourierTransform.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEE7415218452E75006E4BCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEE7415318452E75006E4BCA /* UIKit.framework */,
+				CEE7415518452E75006E4BCA /* Foundation.framework */,
+				CEE7415718452E75006E4BCA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEE7415918452E75006E4BCA /* FourierTransform */ = {
+			isa = PBXGroup;
+			children = (
+				CECC333B18463423008651C0 /* MainScreenViewController */,
+				CECC333C1846345B008651C0 /* AmplitudeViewController */,
+				CECC3340184639CE008651C0 /* PhaseViewController */,
+				CEF10D06184D009A0041BE14 /* FourierLogFFT */,
+				CECC334418463AE4008651C0 /* ImageAfterInvFFT */,
+				CECC3335184626E9008651C0 /* APPChildViewController.h */,
+				CECC3336184626E9008651C0 /* APPChildViewController.m */,
+				CEE7416218452E76006E4BCA /* AppDelegate.h */,
+				CEE7416318452E76006E4BCA /* AppDelegate.m */,
+				CEE7416B18452E76006E4BCA /* MainStoryboard_iPhone.storyboard */,
+				CEE7416E18452E76006E4BCA /* MainStoryboard_iPad.storyboard */,
+				CEE7417118452E76006E4BCA /* ViewController.h */,
+				CEE7417218452E76006E4BCA /* ViewController.m */,
+				CEE7415A18452E75006E4BCA /* Supporting Files */,
+			);
+			path = FourierTransform;
+			sourceTree = "<group>";
+		};
+		CEE7415A18452E75006E4BCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEE7415B18452E75006E4BCA /* FourierTransform-Info.plist */,
+				CEE7415C18452E75006E4BCA /* InfoPlist.strings */,
+				CEE7415F18452E75006E4BCA /* main.m */,
+				CEE7416118452E75006E4BCA /* FourierTransform-Prefix.pch */,
+				CEE7416518452E76006E4BCA /* Default.png */,
+				CEE7416718452E76006E4BCA /* Default@2x.png */,
+				CEE7416918452E76006E4BCA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEF10D06184D009A0041BE14 /* FourierLogFFT */ = {
+			isa = PBXGroup;
+			children = (
+				CEF10D07184D011E0041BE14 /* FourierLogViewController.h */,
+				CEF10D08184D011E0041BE14 /* FourierLogViewController.m */,
+			);
+			name = FourierLogFFT;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEE7414F18452E75006E4BCA /* FourierTransform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE7417618452E76006E4BCA /* Build configuration list for PBXNativeTarget "FourierTransform" */;
+			buildPhases = (
+				CEE7414C18452E75006E4BCA /* Sources */,
+				CEE7414D18452E75006E4BCA /* Frameworks */,
+				CEE7414E18452E75006E4BCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FourierTransform;
+			productName = FourierTransform;
+			productReference = CEE7415018452E75006E4BCA /* FourierTransform.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEE7414818452E75006E4BCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Lion User";
+			};
+			buildConfigurationList = CEE7414B18452E75006E4BCA /* Build configuration list for PBXProject "FourierTransform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEE7414718452E75006E4BCA;
+			productRefGroup = CEE7415118452E75006E4BCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEE7414F18452E75006E4BCA /* FourierTransform */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEE7414E18452E75006E4BCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE7415E18452E75006E4BCA /* InfoPlist.strings in Resources */,
+				CEE7416618452E76006E4BCA /* Default.png in Resources */,
+				CEE7416818452E76006E4BCA /* Default@2x.png in Resources */,
+				CEE7416A18452E76006E4BCA /* Default-568h@2x.png in Resources */,
+				CEE7416D18452E76006E4BCA /* MainStoryboard_iPhone.storyboard in Resources */,
+				CEE7417018452E76006E4BCA /* MainStoryboard_iPad.storyboard in Resources */,
+				CEBD8666184D35EA000B33BD /* question_mark.jpg in Resources */,
+				CEC3D9671858B1D90091E21B /* PLCameraSheetButton.png in Resources */,
+				CEC3D9681858B1D90091E21B /* PLCameraSheetButton@2x.png in Resources */,
+				CEC3D9691858B1D90091E21B /* PLCameraSheetButtonPressed.png in Resources */,
+				CEC3D96A1858B1D90091E21B /* PLCameraSheetButtonPressed@2x.png in Resources */,
+				CEC3D96B1858B1D90091E21B /* PLCameraSheetDoneButton.png in Resources */,
+				CEC3D96C1858B1D90091E21B /* PLCameraSheetDoneButton@2x.png in Resources */,
+				CEC3D96D1858B1D90091E21B /* PLCameraSheetDoneButtonPressed.png in Resources */,
+				CEC3D96E1858B1D90091E21B /* PLCameraSheetDoneButtonPressed@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEE7414C18452E75006E4BCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE7416018452E75006E4BCA /* main.m in Sources */,
+				CEE7416418452E76006E4BCA /* AppDelegate.m in Sources */,
+				CEE7417318452E76006E4BCA /* ViewController.m in Sources */,
+				CECC3337184626E9008651C0 /* APPChildViewController.m in Sources */,
+				CECC333A18462EA7008651C0 /* MainScreenViewController.m in Sources */,
+				CECC333F18463479008651C0 /* AmplitudeViewController.m in Sources */,
+				CECC3343184639E1008651C0 /* PhaseViewController.m in Sources */,
+				CECC334718463AFA008651C0 /* ImageAfterInvFFTViewController.m in Sources */,
+				CECC334B18463E29008651C0 /* UIImage+Pixels.m in Sources */,
+				CEF10D09184D011E0041BE14 /* FourierLogViewController.m in Sources */,
+				CEC3D9611858B1D90091E21B /* GKCropBorderView.m in Sources */,
+				CEC3D9621858B1D90091E21B /* GKImageCropOverlayView.m in Sources */,
+				CEC3D9631858B1D90091E21B /* GKImageCropView.m in Sources */,
+				CEC3D9641858B1D90091E21B /* GKImageCropViewController.m in Sources */,
+				CEC3D9651858B1D90091E21B /* GKImagePicker.m in Sources */,
+				CEC3D9661858B1D90091E21B /* GKResizeableCropOverlayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEE7415C18452E75006E4BCA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE7415D18452E75006E4BCA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEE7416B18452E76006E4BCA /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE7416C18452E76006E4BCA /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CEE7416E18452E76006E4BCA /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE7416F18452E76006E4BCA /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEE7417418452E76006E4BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEE7417518452E76006E4BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEE7417718452E76006E4BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FourierTransform/FourierTransform-Prefix.pch";
+				INFOPLIST_FILE = "FourierTransform/FourierTransform-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEE7417818452E76006E4BCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FourierTransform/FourierTransform-Prefix.pch";
+				INFOPLIST_FILE = "FourierTransform/FourierTransform-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEE7414B18452E75006E4BCA /* Build configuration list for PBXProject "FourierTransform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE7417418452E76006E4BCA /* Debug */,
+				CEE7417518452E76006E4BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE7417618452E76006E4BCA /* Build configuration list for PBXNativeTarget "FourierTransform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE7417718452E76006E4BCA /* Debug */,
+				CEE7417818452E76006E4BCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEE7414818452E75006E4BCA /* Project object */;
+}
