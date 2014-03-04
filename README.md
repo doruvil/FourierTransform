@@ -8,3 +8,6 @@ need to slide to the left and you will get: "Amplitude FFT Image",
 after applying the inverse FFT", where FFT = Fast Fourier Transform.
 The image which you bring to the app should be a square image of 2^n
 pixels (e.g.: 1024 x 1024)
+
+
+Please read the document Fourier FOURIER TRANSFORM.docx from the main folder for more informations!
