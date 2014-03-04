@@ -4,7 +4,7 @@
 //
 //  Created by Lion User on 27/11/2013.
 //  Copyright (c) 2013 Lion User. All rights reserved.
-//
+//  Done by Vilceanu Dumitru
 
 #import <UIKit/UIKit.h>
 #import "UIImage+Pixels.h"
